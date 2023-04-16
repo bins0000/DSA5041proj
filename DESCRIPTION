@@ -1,12 +1,11 @@
 Package: DSA5041proj
 Type: Package
-Title: What the Package Does (Title Case)
+Title: DSA5041 Package
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Nasri Binsaleh
+Maintainer: Nasri Binsaleh <nasri.binsaleh-1@ou.edu>
+Description: For now it has the constructor and the print function.
+License: MIT
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/bins0000/DSA5041proj
