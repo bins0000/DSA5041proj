@@ -14,9 +14,6 @@
 #' alpha <- 0.05; obj <- myconstr(x = x, y = y, alpha = 0.05); print(obj)
 #'
 print.Rttest = function(x, ...) {
-  # library("magrittr")
-  # library("kableExtra")
-
   #Print alpha
   print(paste("Alpha value: ", x$alpha))
 

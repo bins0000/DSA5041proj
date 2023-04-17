@@ -14,7 +14,7 @@ myconstr(x, y, alpha)
 \item{alpha}{error level}
 }
 \value{
-a names list containing data, alpha value, confidence interval, p-Value
+a named list containing data, alpha value, confidence interval, p-Value
 }
 \description{
 Constructor Function

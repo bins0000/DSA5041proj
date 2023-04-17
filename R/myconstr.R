@@ -6,7 +6,7 @@
 #'
 #' @importFrom stats t.test
 #'
-#' @return a names list containing data, alpha value, confidence interval, p-Value
+#' @return a named list containing data, alpha value, confidence interval, p-Value
 #' @export
 #'
 #' @examples set.seed(21);x <-rnorm(30,5,2); set.seed(23); y<- rnorm(40, 3,2);
