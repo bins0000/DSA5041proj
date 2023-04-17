@@ -1,28 +1,34 @@
 #' Print Function
 #'
-#' @param obj
+#' @param x the rttest class object
+#' @param ... extra parameters
 #'
-#' @return
+#' @importFrom kableExtra 'kable' 'row_spec' 'kable_styling'
+#' @importFrom dplyr '%>%'
+#'
+#' @return print the info
+#' @rdname print.Rttest
 #' @export
 #'
-#' @examples
+#' @examples set.seed(21);x <-rnorm(30,5,2); set.seed(23); y<- rnorm(30, 3,2);
+#' alpha <- 0.05; obj <- myconstr(x = x, y = y, alpha = 0.05); print(obj)
 #'
-print.Rttest = function(obj) {
-  library(magrittr)
-  library("kableExtra")
+print.Rttest = function(x, ...) {
+  # library("magrittr")
+  # library("kableExtra")
 
   #Print alpha
-  print(paste("Alpha value: ", obj$alpha))
+  print(paste("Alpha value: ", x$alpha))
 
   #print p-value
-  print(paste("p-value: ", obj$pVal))
+  print(paste("p-value: ", x$pVal))
 
   #print the confidence interval
   print(paste("Confidence Interval of mu_x and mu_y: "))
-  print(obj$confInt)
+  print(x$confInt)
 
   #Print dataframe using Kable
   print(paste("Dataframe: "))
-  # print(kableExtra::kable(obj$data))
-  kable(obj$data) %>% kable_styling("hover", full_width = F, position = "center")
+  # print(kableExtra::kable(x$data))
+  kable(x$data) %>% kable_styling("hover", full_width = F, position = "center")
 }

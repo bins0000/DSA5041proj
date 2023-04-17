@@ -4,11 +4,21 @@
 \alias{print.Rttest}
 \title{Print Function}
 \usage{
-\method{print}{Rttest}(obj)
+\method{print}{Rttest}(x, ...)
 }
 \arguments{
-\item{obj}{}
+\item{x}{the rttest class object}
+
+\item{...}{extra parameters}
+}
+\value{
+print the info
 }
 \description{
 Print Function
+}
+\examples{
+set.seed(21);x <-rnorm(30,5,2); set.seed(23); y<- rnorm(30, 3,2);
+alpha <- 0.05; obj <- myconstr(x = x, y = y, alpha = 0.05); print(obj)
+
 }

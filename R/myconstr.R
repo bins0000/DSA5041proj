@@ -1,13 +1,16 @@
 #' Constructor Function
 #'
-#' @param x
-#' @param y
-#' @param alpha
+#' @param x data list
+#' @param y data list
+#' @param alpha error level
 #'
-#' @return
+#' @importFrom stats t.test
+#'
+#' @return a names list containing data, alpha value, confidence interval, p-Value
 #' @export
 #'
-#' @examples
+#' @examples set.seed(21);x <-rnorm(30,5,2); set.seed(23); y<- rnorm(40, 3,2);
+#' alpha <- 0.05; obj <- myconstr(x = x, y = y, alpha = 0.05)
 #'
 myconstr <- function(x,y,alpha){
   # put x and y in a dataframe **however, a dataframe needs same length vectors..

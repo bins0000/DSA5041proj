@@ -7,8 +7,20 @@
 myconstr(x, y, alpha)
 }
 \arguments{
-\item{alpha}{}
+\item{x}{data list}
+
+\item{y}{data list}
+
+\item{alpha}{error level}
+}
+\value{
+a names list containing data, alpha value, confidence interval, p-Value
 }
 \description{
 Constructor Function
+}
+\examples{
+set.seed(21);x <-rnorm(30,5,2); set.seed(23); y<- rnorm(40, 3,2);
+alpha <- 0.05; obj <- myconstr(x = x, y = y, alpha = 0.05)
+
 }

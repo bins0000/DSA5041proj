@@ -5,9 +5,13 @@ Version: 0.1.0
 Author: Nasri Binsaleh
 Maintainer: Nasri Binsaleh <nasri.binsaleh-1@ou.edu>
 Description: For now it has the constructor and the print function.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/bins0000/DSA5041proj
 BugReports: https://github.com/bins0000/DSA5041proj/issues
 RoxygenNote: 7.2.3
+Imports:
+    dplyr,
+    kableExtra,
+
