@@ -15,4 +15,7 @@ Imports:
     dplyr,
     kableExtra,
     ggplot2
-
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

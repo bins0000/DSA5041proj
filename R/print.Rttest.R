@@ -11,18 +11,18 @@
 #' @export
 #'
 #' @examples set.seed(21);x <-rnorm(30,5,2); set.seed(23); y<- rnorm(30, 3,2);
-#' alpha <- 0.05; obj <- myconstr(x = x, y = y, alpha = 0.05); print(obj)
+#' alpha <- 0.05; obj <- myttest(x = x, y = y, alpha = 0.05); print(obj)
 #'
 print.Rttest = function(x, ...) {
-  #Print alpha
-  print(paste("Alpha value: ", x$alpha))
+  #print test type
+  print(paste0("t-test Type: ", x$testType))
 
-  #print p-value
-  print(paste("p-value: ", x$pVal))
+  #Print alpha
+  print(paste0("Alpha value: ", x$alpha))
 
   #print the confidence interval
-  print(paste("Confidence Interval of mu_x and mu_y: "))
-  print(x$confInt)
+  print(paste0(((1-x$alpha)*100), "% Confidence Interval of mu_x and mu_y: "))
+  print(x$statistics$conf.int)
 
   #Print dataframe using Kable
   print(paste("Dataframe: "))
