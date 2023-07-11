@@ -1,5 +1,7 @@
 # R-T-Test project
 
+# Author: Nasri Binsaleh
+
 R application to compute t-test between populations
 
 # Introduction
