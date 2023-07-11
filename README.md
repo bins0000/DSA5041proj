@@ -1,4 +1,4 @@
-# R-T-Test project
+# R-t-test project
 
 # Author: Nasri Binsaleh
 
